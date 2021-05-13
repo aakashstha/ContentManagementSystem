@@ -20,10 +20,21 @@ a{
     padding-left: 20px;
     width: 270px;
 }
+#toggle_button {
+    display: none;
+    color: rgba(116, 192, 67, 255);
+    background-color: transparent;
+    border: rgba(51, 51, 51, 255);
+    border-radius: 10px;
+}
+.fa.fa-bars {
+    font-size: 35px;
+}
 
-.header_link {
+#header_link {
     display: inline;
-    margin-left: 335px;
+    float: right;
+    margin: 55px 60px 0 0;
 }
 
 .next_page {
@@ -110,7 +121,7 @@ a{
 }
 .completion_title {
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5.5%;
 }
 
 
@@ -144,7 +155,7 @@ a{
 }
 .methology_images {
     display: flex;
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
 .image {
@@ -243,14 +254,71 @@ a{
 }
 
 
+@media screen and (max-width: 900px){
+    .handshake {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        margin: 50px 0 50px 5px;
+    }
+    .header {
+        position: relative;
+    }
+    .college_logo {
+        float: left;
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    #header_link {
+        margin-left: 0;
+        display: none;
+        float: none;
+        margin: 0;
+    }
+    #header_link a {
+        display: block;
+    }
+    #toggle_button {
+       display: inline;
+       float: right;
+       margin: 30px 10px 0 0;
+    }
+    #toggle_button:hover {
+        color: rgba(51, 51, 51, 255);
+     }
 
-@media screen and (max-width: 700px){ 
+    /* .methology_images {
+        display: inline;
+    }
+    .image {
+        display: block;
+        width: 40%;
+    }
+    .all_image_subtitles {
+        display: inline;
+    } */
+
+    .first_achievement, 
+    .second_achievement {
+        display: block;
+    }
+    .achievement_one,
+    .achievement_two {
+        padding: 30px;
+        margin: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 150px;
+    }
+
     .footer {
-        padding-bottom: 80px;
-
+        display: block;
+        padding-bottom: 70px;
     }
     .social_media {
-        margin: 0 40px;
-        float:left;
+       margin-left: 55px;
     }
+
 }

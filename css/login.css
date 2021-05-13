@@ -69,24 +69,38 @@ a{
 
 
 /* Responsive Start from Here */
-@media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .greeting {
         display: inline-block;
         margin-top: 40px;
-        margin-left: 0;
+        margin-left: 0px;
     }
     .container {
         background-color: whitesmoke;
         padding: 20px 20px 0px 20px;
-        margin: 40px 80px;
+        margin: 0 0 20px 0;
         border-radius: 8px;
         font-size: 18px;
     }
-    
-  }
 
-
-  @media screen and (max-width: 500px) {
-
+    input {
+        color: rgb(0, 0, 0);
+        background-color: rgb(221, 218, 218);
+        padding: 15px 100px 15px 20px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+    }
+    .login {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(48, 201, 84);
+        padding: 15px 100px;
+        border-radius: 20px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+    }
     
   }

@@ -41,6 +41,12 @@
     color: white;
 }
 
+/* Responsive Start from Here */
+@media screen and (max-width: 900px) {
+    .individual_event {
+        height: 500px;
+    }
+}
 
 
 

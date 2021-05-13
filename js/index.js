@@ -13,3 +13,12 @@ function coverSlides() {
     setTimeout(coverSlides, 4000);
 }
 
+function changeFunction() {
+    if (header_link.style.display == "block") {
+        document.getElementById("header_link").style.display = "none";
+    } else {
+        document.getElementById("header_link").style.display = "block";
+    }
+
+}
+
