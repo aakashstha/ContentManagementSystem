@@ -145,7 +145,7 @@ textarea {
     border: rgba(51, 51, 51, 255);
     border-radius: 14px;
     width: 120px;
-    box-shadow: 0 9px #999;
+    box-shadow: 3px 4px #999;
 }
 .adding_button:focus {
     outline: none;
