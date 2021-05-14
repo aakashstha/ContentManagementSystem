@@ -1,2 +1,0 @@
-# Django REST Framework Tutorial
-
