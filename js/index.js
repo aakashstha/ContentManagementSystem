@@ -1,3 +1,4 @@
+// For image to display in every two second.
 var index = 0;
 coverSlides();
 
@@ -13,6 +14,8 @@ function coverSlides() {
     setTimeout(coverSlides, 4000);
 }
 
+
+// For responsive to show and hide toggle Button
 function changeFunction() {
     if (header_link.style.display == "block") {
         document.getElementById("header_link").style.display = "none";

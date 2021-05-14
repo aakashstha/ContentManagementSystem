@@ -60,26 +60,29 @@ a{
 .events {
     margin-bottom: 40px;
 }
+.events_title_line {
+    border: 2px solid rgba(51, 51, 51, 255);
+    margin: 0 auto 60px auto;
+    width: 56.5%;
+}
 .events_title {
     color: rgba(51, 51, 51, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 0;
 }
-.events_title_line {
-    border: 2px solid rgba(51, 51, 51, 255);
-    margin: 0 auto 60px auto;
-    width: 50%;
-
+.event_titles {
+    margin: auto 40px;
 }
+
 .individual_event {
     background-color: rgb(94, 138, 138);
     display: flex;
     justify-content: space-around;
     width: 50%;
     height: 240px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 10px 50px;
     margin-bottom: 20px;
 }
 .data {

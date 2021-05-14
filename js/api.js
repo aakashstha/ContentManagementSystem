@@ -1,5 +1,5 @@
 var mynew = document.getElementById("demo");
-const Url = "https://jsonplaceholder.typicode.com/users"
+const Url = "http://127.0.0.1:8001/Courses/"
 
 axios.get(Url)
     .then((response) => {
@@ -11,7 +11,7 @@ axios.get(Url)
 function generate(response) {
     let output = '';
     response.data.forEach(el => {
-        output += `<h2 class="my">${el.name}</h2>`
+        output += `<h2 class="my">${el.id}</h2>`
     })
     
     mynew.insertAdjacentHTML('afterbegin', output)
