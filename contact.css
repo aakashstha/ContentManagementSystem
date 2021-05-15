@@ -1,0 +1,104 @@
+
+  
+
+
+/* Contact Section
+
+--------------------------------*/
+
+.container{
+  padding: 20px 500px ;
+  width: 300px;
+  right: 100px;
+  left: 100px;
+
+
+
+}
+
+.section-header{
+  width: 300px;
+  padding: 5px -100px;
+}
+
+
+
+
+#contact {
+  background: #f7f7f7;
+  padding: 80px 10px 40px 10px;
+  right: 100px;
+  left: 100px;
+}
+
+#contact #google-map {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#contact .info {
+  color: #333333;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #2dc997;
+  float: left;
+  line-height: 0;
+}
+
+#contact .info p {
+  padding: 0px 0px 10px 50px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+
+#contact .social-links {
+  width: 200px;
+  padding: 20px 10px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .social-links a i {
+  line-height: 0;
+}
+
+#contact .social-links a:hover {
+  background: #2dc997;
+  color: #fff;
+}
+
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
