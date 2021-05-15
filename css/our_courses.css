@@ -56,14 +56,16 @@ a{
 /* Up to Header Section*/
 
 
-/* Our Courses*/
+/* Our #Courses */
 .course_title {
     color: rgba(51, 51, 51, 255);
     border-bottom: 4px solid rgba(51, 51, 51, 255);
     text-align: center;
-    margin-bottom: 60px;
+    width: 50%;
+    margin: 60px auto;
 }
-.courses {
+#courses_available,
+#courses_coming_soon {
     margin: 60px auto;
     width: 50%;
 }

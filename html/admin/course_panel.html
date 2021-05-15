@@ -12,9 +12,7 @@
 </head>
 
 <body>
-    <!-- <div id="demo">
-    </div> -->
-
+    
     <!-- Header Section -->
     <header class="dashboard">
         <h1 class="a">ADMIN DASHBOARD</h1>
@@ -32,54 +30,10 @@
 
         </div>
 
-        <div class="courses">
+
+        <div>
             <h1 class="course_title">ALL COURSES</h1>
-
-            <div class="course">
-                <h1 class="course_name">
-                    BIBM
-                </h1>
-                <div class="sub_course_part">
-                    <p>Bachelors in International Business Management</p>
-                    <p>Availability = Available</p>
-                    <p>Id = 1</p>
-                </div>
-            </div>
-            <div class="course">
-                <h1 class="course_name">
-                    BIT
-                </h1>
-                <div class="sub_course_part">
-                    <p>Bachelor in Computer Science</p>
-                    <p>Availability = Available</p>
-                    <p>Id = 2</p>
-                </div>
-
-
-            </div>
-            <div class="course">
-                <h1 class="course_name">
-                    IMBA
-                </h1>
-                <div class="sub_course_part">
-                    <p>International Master of Business Administration
-                    </p>
-                    <p>Availability = Comming Soon</p>
-                    <p>Id = 3</p>
-                </div>
-
-
-            </div>
-            <div class="course">
-                <h1 class="course_name">
-                    BCNS
-                </h1>
-                <div class="sub_course_part">
-                    <p>Bachelor in Computer Networking Security</p>
-                    <p>Availability = Comming Soon</p>
-                    <p>Id = 4</p>
-                </div>
-
+            <div id="all_courses_available">
             </div>
         </div>
 
@@ -89,19 +43,20 @@
 
                 <h2 class="crud_title">Add Course</h2>
                 <label>Course Name</label> <br>
-                <input type="text"><br>
+                <input type="text" id="course_name"><br>
                 <label>Course Full Form</label> <br>
-                <input type="text"><br>
+                <input type="text" id="course_full_form"><br>
 
                 <div class="option">
                     <label>Availability:</label> <br>
-                    <input type="radio"> <label>Available</label><br>
-                    <input type="radio"> <label>Comming Soon</label><br>
+                    <input type="radio" name="select" value="1"> <label>Available</label><br>
+                    <input type="radio" name="select" value="0"> <label>Comming Soon</label><br>
                 </div>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Add</button>
+                    <button class="adding_button" type="submit" value="submit" onclick="postCourses()">Add</button>
                 </div>
+
             </div>
 
             <hr>
@@ -109,20 +64,20 @@
 
                 <h2 class="crud_title">Update Course</h2>
                 <label>Course Id</label> <br>
-                <input type="text"><br>
+                <input type="text" id="u_course_id"><br>
                 <label>Course Name</label> <br>
-                <input type="text"><br>
+                <input type="text" id="u_course_name"><br>
                 <label>Course Full Form</label> <br>
-                <input type="text"><br>
+                <input type="text" id="u_course_full_form"><br>
 
                 <div class="option">
                     <label>Availability:</label> <br>
-                    <input type="radio"> <label>Available</label><br>
-                    <input type="radio"> <label>Comming Soon</label><br>
+                    <input type="radio" name="select_u" value="1"> <label>Available</label><br>
+                    <input type="radio" name="select_u" value="0"> <label>Comming Soon</label><br>
                 </div>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Update</button>
+                    <button class="adding_button" type="submit" value="submit" onclick="updateCourses()">Update</button>
                 </div>
             </div>
 
@@ -131,20 +86,20 @@
 
                 <h2 class="crud_title">Delete Course</h2>
                 <label>Course Id</label> <br>
-                <input type="text"><br>
+                <input type="text" id="d_course_id"><br>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Delete</button>
+                    <button class="adding_button" type="submit" value="submit" onclick="deleteCourses()">Delete</button>
                 </div>
             </div>
 
             <a class="logout" href="/html/admin/login.html">Log out</a>
         </div>
-        
+
     </div>
 
 
-    <script src="../JS/admin_panel.js"></script>
+    <script src="/JS/admin_api.js"></script>
 </body>
 
 </html>

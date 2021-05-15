@@ -34,107 +34,11 @@
 
         </div>
 
+        <!-- From API -->
         <div class="events">
             <h1 class="course_title">ALL EVENTS</h1>
 
-            <div class="all_events">
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Parents Teacher Meeting</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 1</p>
-                    </div>
-                    <div class="data">
-                        <h1>15</h1>
-                        <h2>March</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Free Launch for All Teachers and Students</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 2</p>
-                    </div>
-                    <div class="data">
-                        <h1>20</h1>
-                        <h2>April</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Computer Science Exhibition</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 3</p>
-                    </div>
-                    <div class="data">
-                        <h1>2</h1>
-                        <h2>May</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Farewell for Final Year Studens</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 4</p>
-                    </div>
-                    <div class="data">
-                        <h1>29</h1>
-                        <h2>May</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Prom Night in College</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 5</p>
-                    </div>
-                    <div class="data">
-                        <h1>22</h1>
-                        <h2>June</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-                <div class="individual_event">
-                    <div class="event_title">
-                        <h1>Singing and Dancing Competition</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam
-                            velit
-                            itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi,
-                            vitae
-                            quasi sequi porro? Magnam!</p>
-                        <p class="id">Id = 6</p>
-                    </div>
-                    <div class="data">
-                        <h1>25</h1>
-                        <h2>June</h2>
-                        <h2> 2021</h2>
-                    </div>
-                </div>
-
+            <div id="all_events">
             </div>
 
         </div>
@@ -145,14 +49,14 @@
 
                 <h2 class="crud_title">Add Event</h2>
                 <label>Event Name</label> <br>
-                <input type="text"><br>
+                <input type="text" id="event_name"><br>
                 <label>Event Description</label> <br>
-                <textarea name="" id="" cols="22" rows="10"></textarea><br>
+                <textarea id="event_description" name="" id="" cols="22" rows="10"></textarea><br>
                 <label>Event Date</label> <br>
-                <input type="date"><br>
+                <input type="date" id="event_date"><br>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Add</button>
+                    <button class="adding_button" type="submit" onclick="postEvents()">Add</button>
                 </div>
             </div>
 
@@ -161,16 +65,16 @@
 
                 <h2 class="crud_title">Update Event</h2>
                 <label>Event Id</label> <br>
-                <input type="text"><br>
+                <input type="text" id="u_event_id"><br>
                 <label>Event Name</label> <br>
-                <input type="text"><br>
+                <input type="text" id="u_event_name"><br>
                 <label>Event Description</label> <br>
-                <textarea name="" id="" cols="22" rows="10"></textarea><br>
+                <textarea id="u_event_description" name="" id="" cols="22" rows="10"></textarea><br>
                 <label>Event Date</label> <br>
-                <input type="date"><br>
+                <input type="date" id="u_event_date"><br>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Update</button>
+                    <button class="adding_button" type="submit" onclick="updateEvents()">Update</button>
                 </div>
             </div>
 
@@ -179,10 +83,10 @@
 
                 <h2 class="crud_title">Delete Event</h2>
                 <label>Event Id</label> <br>
-                <input type="text"><br>
+                <input type="text" id="d_event_id"><br>
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Delete</button>
+                    <button class="adding_button" type="submit" onclick="deletEvents()">Delete</button>
                 </div>
             </div>
 
@@ -191,7 +95,7 @@
     </div>
 
 
-    <script src="../JS/admin_panel.js"></script>
+    <script src="/JS/admin_api.js"></script>
 </body>
 
 </html>

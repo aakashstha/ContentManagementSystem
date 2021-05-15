@@ -102,12 +102,18 @@ a{
     height: 520px;
 }
 
-.courses {
+#courses_available {
     margin: 60px auto;
     width: 50%;
 }
 
-.course_title,
+.course_title {
+    color: rgba(51, 51, 51, 255);
+    border-bottom: 4px solid rgba(51, 51, 51, 255);
+    text-align: center;
+    margin: 60px auto;
+    width: 50%;
+}
 .method_title,
 .completion_title {
     color: rgba(51, 51, 51, 255);

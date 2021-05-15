@@ -8,8 +8,9 @@
     <title>Our Events</title>
     <link rel="stylesheet" href="/css/events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
- 
+
 <body>
     <header class="header">
         <a href="/html/home.html">
@@ -30,95 +31,18 @@
         <div class="header_separator"></div>
     </header>
 
+    <!-- From API -->
     <div class="events">
         <h1 class="events_title">HERALD EVENTS</h1>
         <hr class="events_title_line">
 
-        <div class="all_events">
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Parents Teacher Meeting</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>15</h1>
-                    <h2>March</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Free Launch for All Teachers and Students</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>20</h1>
-                    <h2>April</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Computer Science Exhibition</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>2</h1>
-                    <h2>May</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Farewell for Final Year Studens</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>29</h1>
-                    <h2>May</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Prom Night in College</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>22</h1>
-                    <h2>June</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-            <div class="individual_event">
-                <div class="event_titles">
-                    <h1>Singing and Dancing Competition</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur nihil quisquam velit
-                        itaque neque deserunt, nemo, consequatur suscipit reiciendis officiis ad rem fugit animi, vitae
-                        quasi sequi porro? Magnam!</p>
-                </div>
-                <div class="data">
-                    <h1>25</h1>
-                    <h2>June</h2>
-                    <h2> 2021</h2>
-                </div>
-            </div>
-
+        <div id="all_events">
         </div>
 
     </div>
 
     <script src="/JS/index.js"></script>
+    <script src="/JS/api.js"></script>
     <footer class="footer">
         <h4 class="copyright">
             © Herald College Kathmandu.

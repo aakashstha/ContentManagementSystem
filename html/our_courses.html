@@ -8,6 +8,7 @@
     <title>Our Courses</title>
     <link rel="stylesheet" href="/css/our_courses.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -30,46 +31,18 @@
         <div class="header_separator"></div>
     </header>
 
-    <div class="courses">
-        <h1 class="course_title">OUR COURSES</h1>
-
-        <div class="course">
-            <h1 class="course_name">
-                BIBM
-            </h1>
-            <p class="sub_course_name">Bachelors in International Business Management</p>
-        </div>
-
-        <div class="course">
-            <h1 class="course_name">
-                BIT
-            </h1>
-            <p class="sub_course_name">Bachelor in Computer Science</p>
-        </div>
+    <!-- From API -->
+    <h1 class="course_title">OUR COURSES</h1>
+    <div id="courses_available">
     </div>
 
-    <div class="courses">
-        <h1 class="course_title">COMING SOON</h1>
-
-        <div class="course">
-            <h1 class="course_name">
-                IMBA
-            </h1>
-            <p class="sub_course_name">International Master of Business Administration
-            </p>
-
-        </div>
-
-        <div class="course">
-            <h1 class="course_name">
-                BCNS
-            </h1>
-            <p class="sub_course_name">Bachelor in Computer Networking Security</p>
-
-        </div>
+    <h1 class="course_title">COMING SOON</h1>
+    <div id="courses_coming_soon">
     </div>
+   
 
     <script src="/JS/index.js"></script>
+    <script src="/JS/api.js"></script>
     <footer class="footer">
         <h4 class="copyright">
             © Herald College Kathmandu.

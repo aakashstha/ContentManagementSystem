@@ -60,10 +60,11 @@ body {
     text-decoration: underline;
     font-weight: bolder;
     text-align: center;
+    margin-top: 60px;
 }
-.courses {
-    margin-top: 40px;
-    width: 50%;
+#all_courses_available{
+    margin: auto;
+    width: 100%;
 }
 .course {
     background-color: rgba(116, 192, 67, 255);
@@ -75,13 +76,13 @@ body {
     color: rgba(51, 51, 51, 255);
     font-size: 80px;
     margin: 0;
-    padding: 20px 0px;
+    padding: 20px 140px;
 }
 
 .sub_course_part {
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 2px 0px;
+    padding: 20px 140px;
     background-color: rgba(51, 51, 51, 255);
     font-size: 20px;
     margin: 0;

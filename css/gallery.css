@@ -68,9 +68,10 @@ a{
 .head_title {
     margin: 60px;
 }
-.collection{
-    display: flex;
-    justify-content: center;
+
+#all_images {
+    width: 100%;
+    margin-left: 50px;
 }
 .gallery_image {
     width: 30%;

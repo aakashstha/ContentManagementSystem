@@ -8,6 +8,7 @@
     <title>Our Gallery</title>
     <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -31,29 +32,19 @@
     </header>
 
 
-    <div class="galleries">
-        <h1 class="gallery_title head_title">HERALD GALLERY COLLECTION</h1>
-        
-        <div class="all_images">
-            <div class="collection">
-                <img class="gallery_image" src="/images/gallery/img1.jpeg" alt="">
-                <img class="gallery_image" src="/images/gallery/img2.jpeg" alt="">
-                <img class="gallery_image" src="/images/gallery/img3.jpeg" alt="">
-            </div>
-            <div class="collection">
-                <img class="gallery_image" src="/images/gallery/img4.jpeg" alt="">
-                <img class="gallery_image" src="/images/gallery/img5.jpeg" alt="">
-                <img class="gallery_image" src="/images/gallery/img6.jpeg" alt="">
-            </div>
-            <div class="collection">
-                <img class="gallery_image" src="/images/gallery/img7.jpeg" alt="">
-            </div>
+    <!-- From API -->
+    <h1 class="gallery_title head_title">HERALD GALLERY COLLECTION</h1>
+    
+    <div id="all_images">
+        <img class="gallery_image" src="/images/gallery/img4.jpeg" alt="">
+        <img class="gallery_image" src="/images/gallery/img5.jpeg" alt="">
+        <img class="gallery_image" src="/images/gallery/img6.jpeg" alt="">
+        <img class="gallery_image" src="/images/gallery/img7.jpeg" alt="">
 
-
-        </div>
     </div>
 
     <script src="/JS/index.js"></script>
+    <script src="/JS/admin_api.js"></script>
     <footer class="footer">
         <h4 class="copyright">
             © Herald College Kathmandu.
