@@ -1,18 +1,20 @@
 
-const Url = "http://127.0.0.1:8001/Courses/"
-// const Url = "https://jsonplaceholder.typicode.com/users"
-// el.username
-
-axios.get(Url)
+// This section is for home page in our website and for visitors
+axios.get("http://127.0.0.1:8001/Courses/")
     .then((response) => {
         generateCourses(response);
     })
     .then(error => console.log(error))
 
-
 axios.get("http://127.0.0.1:8001/Events/")
     .then((response) => {
         generateEvents(response);
+    })
+    .then(error => console.log(error))
+
+axios.get("http://127.0.0.1:8001/Gallery/")
+    .then((response) => {
+        generateImages(response);
     })
     .then(error => console.log(error))
 
@@ -24,10 +26,8 @@ function generateCourses(response) {
     let available = '';
     let coming_soon = '';
 
-    console.log("aklsdfjjasdfasdfdl");
-
     response.data.forEach(el => {
-        console.log(el.Coursename);
+
         if (el.Availabilty) {
             available += `
             <div class="course">
@@ -81,3 +81,21 @@ function generateEvents(response) {
 
     events.insertAdjacentHTML('afterbegin', all_events)
 }
+
+
+
+// For Getting Images
+function generateImages(response) {
+    let image = document.getElementById("all_images");
+    let all_image = '';
+
+    response.data.forEach(el => {
+        all_image += `
+            <img class="gallery_image" src="${el.Imagepath}" alt="">
+            `
+    })
+    image.insertAdjacentHTML('afterbegin', all_image)
+}
+
+
+

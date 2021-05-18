@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Local Stoarge</h1>
+    <input id="myFileInput" type="file" />
+    <img id="imgPreview" src="" alt="Preview">
+
+    <!-- writing JavaScript inside html -->
+    <script>
+        document.querySelector("#myFileInput").addEventListener("change", function () {
+            console.log(this.files);
+            const reader = new FileReader();
+
+            reader.addEventListener("load", () => {
+                localStorage.setItem("recent-image", reader.result)
+            })
+
+            reader.readAsDataURL(this.files[0]);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const recentImageDataUrl = localStorage.getItem('recent-image');
+
+            if (recentImageDataUrl) {
+                document.querySelector('#imgPreview').setAttribute("src", recentImageDataUrl);
+            }
+        });
+    </script>
+</body>
+
+</html>

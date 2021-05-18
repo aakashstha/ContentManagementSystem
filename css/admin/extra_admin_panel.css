@@ -47,25 +47,15 @@
 
 /* Gallery Image Section */
 .galleries {
-    margin-top: 50px;
+    margin-left: 60px;
 }
-.collection{
-    display: flex;
-    justify-content: center;
-    
+.images_collection {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
 }
-.img_id {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 16px 40px 16px;
-}
-.img_id p {
-    margin: 0;
-}
-
-.gallery_image {
-    width: 28%;
-    margin: 5px;
+.images_collection img {
+    width: 100%;
 }
 
 

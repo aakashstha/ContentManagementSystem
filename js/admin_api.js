@@ -1,7 +1,7 @@
 
 axios.get("http://127.0.0.1:8001/Courses/")
     .then((response) => {
-        generateCourses(response); 
+        generateCourses(response);
     })
     .then(error => console.log(error))
 
@@ -29,10 +29,10 @@ function generateCourses(response) {
                 ${el.Coursename}
                 </h1>
                 <div class="sub_course_part">
-                <p>${el.Coursefullform}</p>
-                <p>Availability = ${el.Availabilty}</p>
-                <p>Id = ${el.id}</p>
-            </div>
+                    <p>${el.Coursefullform}</p>
+                    <p>Availability = ${el.Availabilty}</p>
+                    <p>Id = ${el.id}</p>
+                </div>
             </div>`
     })
 
@@ -89,6 +89,7 @@ function deleteCourses() {
     }).then((response) => {
     }).then(error => console.log(error))
 }
+
 
 
 
@@ -196,23 +197,28 @@ function generateImages(response) {
 
     response.data.forEach(el => {
         all_image += `
-            <img class="gallery_image" src="${el.Imagepath}" alt="">
-            `
+        <div class="images_collection">
+            <img src="${el.Imagepath}" alt="">
+            <p class="image_id">Id = ${el.id}</p>
+         </div>
+        `
     })
     image.insertAdjacentHTML('afterbegin', all_image)
 }
 
 
 // For Posting Image
-function postEvents() {
-    let event_name = document.getElementById("event_name").value;
-    let event_description = document.getElementById("event_description").value;
-    let event_date = document.getElementById("event_date").value;
+function postImage() {
+    console.log("Hello World!!");
+    // let image_path = document.getElementById("add_image");
 
-    axios.post("http://127.0.0.1:8001/Events/", {
-        "Eventname": event_name,
-        "Eventdescription": event_description,
-        "Date": event_date
-    }).then((response) => {
-    }).then(error => console.log(error))
+    const input = document.querySelector('input[type="file"]')
+    input.addEventListener('', function () {
+        console.log(input.files);
+    }, false);
+
+    // axios.post("http://127.0.0.1:8001/Gallery/", {
+    //     "Imagepath": "abc/abc/",
+    // }).then((response) => {
+    // }).then(error => console.log(error))
 }

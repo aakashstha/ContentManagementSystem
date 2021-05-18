@@ -34,42 +34,14 @@
 
         </div>
 
+        <!-- From API -->
         <div class="galleries">
             <h1 class="course_title">ALL IMAGES</h1>
 
-            <div class="all_images">
-
-                <div class="collection">
-                    <img class="gallery_image" src="/images/gallery/img1.jpeg" alt="">
-                    <img class="gallery_image" src="/images/gallery/img2.jpeg" alt="">
-                    <img class="gallery_image" src="/images/gallery/img3.jpeg" alt="">
-                </div>
-                <div class="img_id">
-                    <p>Id = 1</p>
-                    <p>Id = 2</p>
-                    <p>Id = 3</p>
-                </div>
-
-                <div class="collection">
-                    <img class="gallery_image" src="/images/gallery/img4.jpeg" alt="">
-                    <img class="gallery_image" src="/images/gallery/img5.jpeg" alt="">
-                    <img class="gallery_image" src="/images/gallery/img6.jpeg" alt="">
-                </div>
-                <div class="img_id">
-                    <p>Id = 4</p>
-                    <p>Id = 5</p>
-                    <p>Id = 6</p>
-                </div>
-
-                <div class="collection">
-                    <img class="gallery_image" src="/images/gallery/img7.jpeg" alt="">
-                </div>
-                <div class="img_id">
-                    <p>Id = 7</p>
-                </div>
-
+            <div id="all_images">
 
             </div>
+
         </div>
 
         <!-- Gallery Maintenance -->
@@ -81,7 +53,7 @@
                 <input class="upload_image" type="file" id="img" name="img" accept="image/*">
 
                 <div class="add_buttons">
-                    <button class="adding_button" type="submit">Add</button>
+                    <button class="adding_button" type="submit" onclick="postImage()">Add</button>
                 </div>
             </div>
 
@@ -91,7 +63,7 @@
                 <h2 class="crud_title">Update Image</h2>
                 <label>Image Id</label> <br>
                 <input type="text"><br>
-                <input class="upload_image" type="file" id="img" name="img" accept="image/*">
+                <input id="add_image" class="upload_image" type="file" id="img" name="img" accept="image/*">
 
                 <div class="add_buttons">
                     <button class="adding_button" type="submit">Update</button>
@@ -116,7 +88,7 @@
     </div>
 
 
-    <script src="../JS/admin_panel.js"></script>
+    <script src="/JS/admin_api.js"></script>
 </body>
 
 </html>
