@@ -1,4 +1,5 @@
 
+// This section is for Admin Panel control
 axios.get("http://127.0.0.1:8001/Courses/")
     .then((response) => {
         generateCourses(response);
